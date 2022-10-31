@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
+
+    <style>
+        .search_container {
+            width: 30%;
+        }
+        input{
+            padding: 20px;
+            width: 100%;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 10px 10px 50px gray;
+        }
+        .resultContainer {
+            box-shadow: 10px 10px 10px gray;
+            background-color: antiquewhite;
+            z-index: 1;
+            width: 20%;
+        }
+        .productName {
+            text-align: center;
+            font-size: small;
+            padding: 20px 0;
+            border-bottom: 1px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+  
+    <div class="container mt-4">
+        <div class="search_container">
+            <input type="text" name="" id="" placeholder="Serch Product . . ." class="autoCompleteInputTag">
+            <div class="resultContainer position-absolute"></div>
+        </div>
+        
+        <table class="table mt-5 table-hover position-relative">
+            <thead>
+                <th>no</th>
+                <th>title</th>
+                <th>description</th>
+                <th>category</th>
+                <th>image</th>
+            </thead>
+            <tbody id="tbody">
+        
+            </tbody>
+            
+        </table>
+          
+    </div>
+    
+    
+    
+    <script src="bootstrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
